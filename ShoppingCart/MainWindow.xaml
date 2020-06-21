@@ -1,0 +1,26 @@
+﻿<Window x:Name="frmShoppingCart" x:Class="ShoppingCart.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ShoppingCart"
+        mc:Ignorable="d"
+        Title="Shopping Cart" Height="408" Width="731.5" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Loaded="OnWindowLoaded">
+    <Grid Height="319" Margin="1,0,0,0">
+        <Label x:Name="label" HorizontalAlignment="Left" Margin="85,6,0,0" VerticalAlignment="Top" Width="120">
+            <Label x:Name="labelProducts" Content="Products:" FontWeight="Bold" FontSize="21.333" Width="110"/>
+        </Label>
+        <ListBox x:Name="listBoxProducts" HorizontalAlignment="Left" Height="176" Margin="12,85,0,0" VerticalAlignment="Top" Width="298"/>
+        <Label x:Name="labelCart" Content="Cart" HorizontalAlignment="Left" Margin="517,16,0,0" VerticalAlignment="Top" FontSize="21.333" Height="43" Width="60" FontWeight="Bold"/>
+        <ListBox x:Name="listBoxCart" HorizontalAlignment="Left" Height="176" Margin="423,85,0,0" VerticalAlignment="Top" Width="292"/>
+        <Button x:Name="btnAddTax" Content="Add Tax" HorizontalAlignment="Left" Margin="32,272,0,0" VerticalAlignment="Top" Width="58" Click="btnAddTax_Click"/>
+        <Button x:Name="btnExit" Content="Exit" HorizontalAlignment="Left" Margin="234,272,0,0" VerticalAlignment="Top" Width="48" RenderTransformOrigin="0.46,0.875" IsCancel="True" Click="btnExit_Click"/>
+        <Button x:Name="btnAddToCart" Content="Add To Cart" HorizontalAlignment="Left" Margin="324,116,0,0" VerticalAlignment="Top" Width="84" Height="23" Click="btnAddToCart_Click"/>
+        <Button x:Name="btnRemoveFromCart" Content="Remove&#xD;&#xA;From Cart" HorizontalAlignment="Left" Margin="324,167,0,0" VerticalAlignment="Top" Width="84" Height="40" Click="btnRemoveFromCart_Click"/>
+        <Label x:Name="labelTotal" Content="Total Costs:" HorizontalAlignment="Left" Margin="383,272,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold"/>
+        <Label x:Name="totalAmount" Content="" HorizontalAlignment="Left" Margin="573,277,0,0" VerticalAlignment="Top" Width="80"/>
+        <ComboBox x:Name="comboBoxBikeType" HorizontalAlignment="Left" Margin="134,54,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="comboBoxBikeType_SelectionChanged"/>
+        <Label x:Name="labelBikeType" Content="Bike Type:" HorizontalAlignment="Left" Margin="50,54,0,0" VerticalAlignment="Top" Width="79" FontWeight="Bold"/>
+
+    </Grid>
+</Window>
